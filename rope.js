@@ -7,8 +7,7 @@ constructor(body1,body2,offsetX,offsetY){
     bodyB:body2,
     pointB:{x:this.offsetX,y:this.offsetY}
  }
- this.rope=W
- orld.constraint.create(options)
+ this.rope=Matter.Constraint.create(options)
  World.add(world,this.rope)
 }
 display(){
